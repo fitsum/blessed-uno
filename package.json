@@ -1,0 +1,29 @@
+{
+  "name": "blessed_sketch_001",
+  "version": "0.0.0",
+  "description": "first blessed sketch",
+  "main": "index.js",
+  "dependencies": {
+    "blessed": "^0.1.81"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "n/a"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "fitsum",
+    "nodejs",
+    "cli",
+    "blessed",
+    "sketch"
+  ],
+  "author": "@fitsum",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  }
+}
