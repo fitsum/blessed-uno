@@ -5,7 +5,7 @@ screen.title = "Blessed Sketch 001";
 
 const boxContent = ['one','two','three'];
 
-var box = blessed.box({
+let box = blessed.box({
 	top: 'center',
 	left: 'center',
 	width: '50%',
@@ -17,7 +17,7 @@ var box = blessed.box({
 	}
 });
 
-const innerBox = blessed.box({
+let innerBox = blessed.box({
 	top: 'center',
 	left: 'center',
 	width: '25%',
