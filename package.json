@@ -4,7 +4,8 @@
   "description": "first blessed sketch",
   "main": "index.js",
   "dependencies": {
-    "blessed": "^0.1.81"
+    "blessed": "^0.1.81",
+    "npm": "^6.13.0"
   },
   "devDependencies": {},
   "scripts": {
