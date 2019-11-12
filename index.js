@@ -5,7 +5,7 @@ screen.title = "Blessed Sketch 001";
 
 const boxContent = ['one','two','three'];
 
-let box = blessed.box({
+let outerBox = blessed.box({
 	top: 'center',
 	left: 'center',
 	width: '50%',
@@ -31,10 +31,10 @@ screen.key(['q','escape','C-c'],(ch, key)=>{
 })
 
 
-screen.append(box);
+screen.append(outerBox);
 screen.append(innerBox);
 
-box.focus();
+outerBox.focus();
 
 screen.render();
 	
