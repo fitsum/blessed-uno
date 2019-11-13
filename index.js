@@ -1,40 +1,45 @@
-var blessed = require('blessed');
+const blessed = require('blessed');
 
-var screen = blessed.screen({smartCSR: true});
+const screen = blessed.screen({smartCSR: false});
 screen.title = "Blessed Sketch 001";
 
-const boxContent = ['one','two','three'];
-
-let outerBox = blessed.box({
-	top: 'center',
-	left: 'center',
-	width: '50%',
-	height: '50%',
-	content: boxContent[1],
+const container = blessed.box({
+	top: 'top',
+	right: '1',
+	width: '300',
+	height: '400',
+	content: 'Cholly!',
 	style: {
-		fg: '#006',
+		fg: 'red',
 		bg: 'green',	
 	}
 });
 
-let innerBox = blessed.box({
-	top: 'center',
-	left: 'center',
-	width: '25%',
-	height: '25%',
-	style: {bg: 'white'}
-})
+container.key('enter', (ch, key)=>{
+	container.setContent('Centered content FFS');
+	screen.render();
+});
+
+const quits = ['q', 'escape','C-c'];
+
+const actions = {
+	'up': 'up or forward',
+	'right': 'right',
+	'down': 'down or back',
+	'left': 'left',
+	'space': 'spacebar!',
+}
 
 
-screen.key(['q','escape','C-c'],(ch, key)=>{
+screen.key(quits, (ch, key)=>{
 	return process.exit(0);
-})
+});
 
+screen.key(Object.keys(actions), (ch, key)=>{
+	container.setContent(`action: ${actions[key.name]}`);
+	screen.render();
+});
 
-screen.append(outerBox);
-screen.append(innerBox);
-
-outerBox.focus();
-
+screen.append(container);
 screen.render();
 	
