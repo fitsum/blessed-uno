@@ -1,11 +1,9 @@
-var blessed = require('blessed');
+const blessed = require('blessed');
 
-var screen = blessed.screen({smartCSR: false});
+const screen = blessed.screen({smartCSR: false});
 screen.title = "Blessed Sketch 001";
 
-const boxContent = ['one','two','three'];
-
-let container = blessed.box({
+const container = blessed.box({
 	top: 'top',
 	right: '1',
 	width: '300',
@@ -22,10 +20,9 @@ container.key('enter', (ch, key)=>{
 	screen.render();
 });
 
+const quits = ['q', 'escape','C-c'];
 
-let quits = ['q', 'escape','C-c'];
-
-let actions = {
+const actions = {
 	'up': 'up or forward',
 	'right': 'right',
 	'down': 'down or back',
