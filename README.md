@@ -1,10 +1,12 @@
 # First Blessed Sketch
 
 ## TODO
-- progress bar
-- list/select
 - changing and adding content
 - images, icons, emoji
-- animation: emoji, gif, 'flipbook'
-- modularize parts
+- layout, color, 'responsive'ness
+- modularization/asset org
 
+## LONG TODO
+- progress bar
+- list/select
+- animation: emoji, gif, 'flipbook'
