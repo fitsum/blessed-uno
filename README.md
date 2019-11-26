@@ -2,7 +2,7 @@
 
 ## TODO
 - changing and adding content
-- images, icons, emoji
+- images, QR, icons, emoji	
 - layout, color, 'responsive'ness
 - modularization/asset org
 
