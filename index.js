@@ -6,14 +6,16 @@ screen.title = "Blessed Sketch 001";
 const container = blessed.box({
 	top: 'top',
 	right: '1',
-	width: '300',
-	height: '400',
+	width: '500',
+	height: '500',
 	content: 'Cholly!',
 	style: {
 		fg: 'red',
 		bg: 'green',	
 	}
 });
+
+
 
 container.key('enter', (ch, key)=>{
 	container.setContent('Centered content FFS');
