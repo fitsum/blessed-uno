@@ -3,19 +3,22 @@ const blessed = require('blessed');
 const screen = blessed.screen({smartCSR: false});
 screen.title = "Blessed Sketch 001";
 
-const container = blessed.box({
-	top: 'top',
-	right: '1',
-	width: '500',
-	height: '500',
-	content: 'Cholly!',
-	style: {
-		fg: 'red',
-		bg: 'green',	
-	}
-});
+const makeContainer = (w,h) => {
+	return blessed.box({
+		top: 'top',
+		right: '1',
+		width: w,
+		height: h,
+		content: 'Cholly!',
+		style: {
+			fg: 'red',
+			bg: 'green',	
+		}
+	});
+}
 
 
+container = makeContainer('500','500')
 
 container.key('enter', (ch, key)=>{
 	container.setContent('Centered content FFS');
