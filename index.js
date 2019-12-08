@@ -1,24 +1,10 @@
-const blessed = require('blessed');
+const makers = require('./utils');
 
-const screen = blessed.screen({smartCSR: false});
+const screen = makers.makeScreen();
 screen.title = "Blessed Sketch 001";
 
-const makeContainer = (w,h) => {
-	return blessed.box({
-		top: 'top',
-		right: '1',
-		width: w,
-		height: h,
-		content: 'Cholly!',
-		style: {
-			fg: 'red',
-			bg: 'green',	
-		}
-	});
-}
 
-
-container = makeContainer('500','500')
+container = makers.makeContainer('500','500', {'fg':'black', 'bg':'white'}, '' )
 
 container.key('enter', (ch, key)=>{
 	container.setContent('Centered content FFS');
