@@ -17,8 +17,5 @@ const makeContainer = (w, h, style, content) => {
 };
 
 
-module.exports = {
-	makeScreen: makeScreen,
-	makeContainer: makeContainer
-}
+module.exports = { makeScreen, makeContainer };
 
