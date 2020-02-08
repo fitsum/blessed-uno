@@ -8,7 +8,7 @@ const makeScreen = () => {
 const makeContainer = (w, h, style, content) => {
 	return blessed.box({
 		top: 'top',
-		right: '1',
+		left: '1',
 		width: w,
 		height: h,
 		content: content,
