@@ -1,7 +1,7 @@
 # First Blessed Sketch
 
 ## HOWTO
-- node index
+- `node index`
 
 ## TODO
 - integrate `entr`
