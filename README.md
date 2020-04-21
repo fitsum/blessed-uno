@@ -1,5 +1,8 @@
 # First Blessed Sketch
 
+## HOWTO
+- node index
+
 ## TODO
 - integrate `entr`
 - timestamps/momentjs
