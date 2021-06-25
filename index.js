@@ -3,8 +3,13 @@ const makers = require('./utils');
 const screen = makers.makeScreen();
 screen.title = "Blessed Sketch 001";
 
+let w = screen.width,
+  h = screen.height,
+  color = "red",
+  bgcolor = "#222";
 
-container = makers.makeContainer('500','500', {'fg':'black', 'bg':'white'}, '' )
+// container = makers.makeContainer('500','500', {'fg':'black', 'bg':'white'}, '' )
+container = makers.makeContainer(screen.width, screen.height/2, {'fg':color, 'bg':bgcolor}, '' )
 
 container.key('enter', (ch, key)=>{
 	container.setContent('Centered content FFS');
@@ -34,3 +39,4 @@ screen.key(Object.keys(actions), (ch, key)=>{
 screen.append(container);
 screen.render();
 	
+
