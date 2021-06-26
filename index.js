@@ -1,6 +1,7 @@
-const makers = require('./utils');
+import { makeScreen, makeContainer } from './utils.js';   
+// const makers = require('./utils');
 
-const screen = makers.makeScreen();
+const screen = makeScreen();
 screen.title = "Blessed Sketch 001";
 
 let w = screen.width,
@@ -8,8 +9,8 @@ let w = screen.width,
   color = "red",
   bgcolor = "#222";
 
-// container = makers.makeContainer('500','500', {'fg':'black', 'bg':'white'}, '' )
-container = makers.makeContainer(screen.width, screen.height/2, {'fg':color, 'bg':bgcolor}, '' )
+// const container = makers.makeContainer('500','500', {'fg':'black', 'bg':'white'}, '' )
+const container = makeContainer(screen.width, screen.height/2, {'fg':color, 'bg':bgcolor}, '' )
 
 container.key('enter', (ch, key)=>{
 	container.setContent('Centered content FFS');
