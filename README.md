@@ -4,7 +4,6 @@
 - `node index`
 
 ## TODO
-- integrate `entr`
 - timestamps/momentjs
 - color cycling
 - layout,'responsive'ness
