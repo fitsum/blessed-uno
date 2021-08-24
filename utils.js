@@ -1,3 +1,4 @@
+import { require } from './require.js';
 const blessed = require('blessed');
 
 const makeScreen = () => {
@@ -15,4 +16,4 @@ const makeContainer = (w, h, style, content) => {
   });
 };
 
-module.exports = { makeScreen, makeContainer };
+export { makeScreen, makeContainer };

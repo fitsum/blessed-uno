@@ -1,9 +1,9 @@
-const makers = require('./utils');
+import { makeScreen, makeContainer } from './utils.js';
 
-const screen = makers.makeScreen();
+const screen = makeScreen();
 screen.title = 'Blessed Sketch 001';
 
-const container = makers.makeContainer('500', '500', { fg: 'black', bg: 'white' }, '');
+const container = makeContainer('500', '500', { fg: 'black', bg: 'white' }, '');
 
 container.key('enter', (ch, key) => {
   container.setContent('Centered content FFS');

@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "first blessed sketch",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "blessed": "^0.1.81",
     "npm": ">=6.14.6"
