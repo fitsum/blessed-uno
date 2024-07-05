@@ -9,6 +9,7 @@
     "npm": ">=6.14.6"
   },
   "scripts": {
+    "start": "node index",
     "test": "n/a"
   },
   "repository": {
@@ -20,7 +21,9 @@
     "nodejs",
     "cli",
     "blessed",
-    "sketch"
+    "sketch",
+    "art",
+    "hack"
   ],
   "author": "@fitsum",
   "license": "ISC",
