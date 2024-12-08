@@ -7,8 +7,11 @@
 - TODO SERVICES
 
 ## TODO APP
+- IDEA: projected output for interactive realtime project
+- CHORE: websockets/SSE
+- CHORE: add jsdocs annotations
 - CHORE: update package.json fields - license, author, (node version?)
-- RESEARCH: consider compatibility with node 11.15
+- CHORE: consider compatibility with node 11.15
 - FEATURE: a demo
   - 3 column UI that scrolls RTL stringified JSON of each line of a given song
   - instrumental (or acapella) version of song will ideally also play
@@ -18,7 +21,7 @@
 
 ## TODO UI
 - FEATURE: color cycling
-- RESEARCH: responsive layout possible?
+- RESEARCH: centered content?
 - RESEARCH: unicode characters
 
 ## TODO SERVICES
